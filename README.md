@@ -1,7 +1,20 @@
-# Kata Container Overview
+# Kata Container Sandbox
+
+This repo spins of a virtualbox VM with nested virtualization on, installs k8s and kata containers dependencies, deploys an example kata container, and runs some tests.
+
+## Getting Started
+
+1. Download and install Virtualbox and Vagrant.
+2. Clone repo.
+3. cd into the directory and run `vagrant up`.
+
+## Kata Container Overview
 TLDR; K8s -> containerd -> kata -> qemu -> guest VM -> container
 
 Kata container execution overview: https://github.com/kata-containers/kata-containers/tree/main/docs/design/architecture#container-creation
+
+## Getting Started
+
 
 
 ## Install and Configuration

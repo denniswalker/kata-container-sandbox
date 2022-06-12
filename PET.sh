@@ -43,7 +43,7 @@ kubectl apply -f /tmp/kata_runtime.yaml
 
 echo " ################ PET Runtime Tests ################## "
  
-sleep 30 # Wait a little for the qemu environments and container to spin up.
+sleep 30 # Wait a little for the qemu vm and container to spin up.
 
 # Test that kata is a registered runtime of containerd
 if [[ $(crictl info | jq '.config.containerd.runtimes.kata' | grep kata) ]]; then
