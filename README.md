@@ -13,10 +13,6 @@ TLDR; K8s -> containerd -> kata -> qemu -> guest VM -> container
 
 Kata container execution overview: https://github.com/kata-containers/kata-containers/tree/main/docs/design/architecture#container-creation
 
-## Getting Started
-
-
-
 ## Install and Configuration
 
 Opensuse RPM install: https://github.com/kata-containers/documentation/blob/master/install/opensuse-installation-guide.md
@@ -25,7 +21,6 @@ Containerd configuration: https://github.com/kata-containers/kata-containers/blo
 
 K8s Runtime Class: https://github.com/kata-containers/kata-containers/blob/main/docs/how-to/how-to-use-k8s-with-cri-containerd-and-kata.md#create-runtime-class-for-kata-containers
 
-
 ## Testing
 
 Test without k8s using ctr: https://github.com/kata-containers/kata-containers/blob/main/docs/how-to/containerd-kata.md#run
@@ -33,7 +28,6 @@ Test without k8s using ctr: https://github.com/kata-containers/kata-containers/b
 Test using crictl: https://github.com/kata-containers/kata-containers/blob/main/docs/how-to/run-kata-with-crictl.md
 
 Test using a k8s pod: https://github.com/kata-containers/kata-containers/blob/main/docs/how-to/how-to-use-k8s-with-cri-containerd-and-kata.md#run-pod-in-kata-containers
-
 
 ## How-to
 
