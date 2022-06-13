@@ -42,8 +42,6 @@ EOF
 kubectl apply -f /tmp/kata_runtime.yaml
 
 echo " ################ PET Runtime Tests ################## "
- 
-sleep 30 # Wait a little for the qemu vm and container to spin up.
 
 # Test that kata is a registered runtime of containerd
 if [[ $(crictl info | jq '.config.containerd.runtimes.kata' | grep kata) ]]; then
@@ -72,10 +70,12 @@ spec:
   containers:
   - name: nginx
     image: nginx
-    
+
 EOF
 
 kubectl apply -f /tmp/nginx-kata.yaml
+
+sleep 10 # Wait a little for the qemu vm and container to spin up.
 
 if [[ $(kubectl get pods nginx-kata | grep Running) ]]; then
     echo "K8s shows the kata container as running."
